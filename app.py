@@ -12,7 +12,7 @@ import streamlit as st
 # In[2]:
 
 
-df = pd.read_excel("Beer Consumed Guest For Dashboard.xlsx" , engine="openpyxl")
+df = pd.read_excel("Beer Consumed Guest For Dashboard.xlsx")
 
 
 # In[3]:
