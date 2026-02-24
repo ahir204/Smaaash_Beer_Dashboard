@@ -1,18 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+import os
+import streamlit as st
+import pandas as pd
 
+file_path = "Beer Consumed Guest For Dashboard.xlsx"
 
-import numpy as np 
-import pandas as pd 
-import streamlit as st 
+if not os.path.exists(file_path):
+    st.error("Excel file not found. Check repository upload.")
+    st.stop()
 
-
-# In[2]:
-
-
-df = pd.read_excel("Beer Consumed Guest For Dashboard.xlsx")
+df = pd.read_excel(file_path)
 
 
 # In[3]:
